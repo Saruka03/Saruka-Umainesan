@@ -14,9 +14,12 @@
     <li><a href="projects.html">Projects</a></li>
     <li><a href="certificates.html">Certificates</a></li>
   </ul>
+
+  <button id="theme-toggle" class="theme-btn">🌙</button>
+
 </nav>
 
-<section>
+<section class="reveal">
   <h2>G.C.E Ordinary Level Results - 8A B</h2>
 
   <table>
@@ -36,7 +39,7 @@
   </table>
 </section>
 
-<section>
+<section class="reveal reveal-left">
   <h2>G.C.E Advanced Level Results (Physical Science) - 3A</h2>
 
   <table>
@@ -51,7 +54,7 @@
 </section>
 
 <!-- Semester 1 -->
-<section>
+<section class="reveal reveal-right">
   <h2 class="sem-title">University Results - Semester 1</h2>
 
   <table>
@@ -77,7 +80,7 @@
 </section>
 
 <!-- Semester 2 -->
-<section>
+<section class="reveal reveal-right">
   <h2 class="sem-title">University Results - Semester 2</h2>
 
   <table>
@@ -105,7 +108,7 @@
 </section>
 
 <!-- Semester 3 -->
-<section>
+<section class="reveal reveal-zoom">
   <h2 class="sem-title">University Results - Semester 3</h2>
 
   <table>
@@ -151,7 +154,30 @@
   reveals.forEach(el => observer.observe(el));
 </script>
 
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙";
+    }
+  });
+</script>
+
   
 </body>
 </html>
+
 
