@@ -14,9 +14,12 @@
     <li><a href="projects.html">Projects</a></li>
     <li><a href="certificates.html">Certificates</a></li>
   </ul>
+
+  <button id="theme-toggle" class="theme-btn">🌙</button>
+
 </nav>
 
-<section>
+<section class="reveal">
   <h2>Certificates</h2>
 
   <!-- Certificate Group 1 -->
@@ -92,7 +95,30 @@
   reveals.forEach(el => observer.observe(el));
 </script>
 
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const body = document.body;
 
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙";
+    }
+  });
+</script>
+
+  
 </body>
 </html>
+
 
