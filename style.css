@@ -46,13 +46,16 @@ nav {
 
 /* Theme button */
 .theme-btn {
-  margin-left: 20px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
   background: none;
   border: none;
   font-size: 1.4rem;
   cursor: pointer;
   color: white;
 }
+
 
 /* ===============================
    HERO / INTRO SECTION
@@ -330,6 +333,7 @@ body.dark header {
 .reveal-zoom {
   transform: scale(0.9);
 }
+
 
 
 
