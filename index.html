@@ -6,6 +6,7 @@
   <title>Saruka Umainesan | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -16,6 +17,9 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="certificates.html">Certificates</a></li>
     </ul>
+
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+
   </nav>
 
   <!-- Header -->
@@ -164,5 +168,30 @@
     <p>© 2026 Saruka Umainesan</p>
   </footer>
 
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙";
+    }
+  });
+</script>
+
+  
+  
 </body>
 </html>
+
