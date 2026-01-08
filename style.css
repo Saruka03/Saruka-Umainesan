@@ -67,7 +67,7 @@ header {
       rgba(11, 60, 93, 0.85),
       rgba(11, 60, 93, 0.85)
     ),
-    url("images/profile-light.jpg") center/cover no-repeat;
+    url("images/light_bg.jpg") center/cover no-repeat;
 }
 
 header h1 {
@@ -300,5 +300,6 @@ body.dark header {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("images/profile-dark.jpg") center/cover no-repeat;
+    url("images/dark_bg.jpg") center/cover no-repeat;
 }
+
