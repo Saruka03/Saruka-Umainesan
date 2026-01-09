@@ -16,6 +16,7 @@ function toggleTheme() {
   }
 }
 
+/* Apply saved theme on every page */
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   const icon = document.querySelector(".theme-box .icon");
@@ -26,11 +27,6 @@ window.addEventListener("DOMContentLoaded", () => {
     if (icon && text) {
       icon.textContent = "☀️";
       text.textContent = "Light";
-    }
-  } else {
-    if (icon && text) {
-      icon.textContent = "🌙";
-      text.textContent = "Dark";
     }
   }
 });
