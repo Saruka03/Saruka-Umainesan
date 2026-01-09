@@ -42,6 +42,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .nav-links {
@@ -64,19 +65,6 @@ nav {
 .nav-links a:hover {
   text-decoration: underline;
 }
-
-/* Theme button */
-.theme-btn {
-  position: absolute;
-  right: 20px;
-  top: 12px;
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
-  color: white;
-}
-
 
 /* ===============================
    HERO / INTRO SECTION
@@ -323,20 +311,6 @@ body.dark .nav-buttons a {
 }
 
 /* ===== THEME BUTTON ===== */
-.theme-box {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #e5e7eb;
-  padding: 10px 14px;
-  border-radius: 30px;
-  cursor: pointer;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  font-weight: bold;
-  z-index: 1000;
-}
 
 body.dark .theme-box {
   background: #1f2933;
@@ -612,6 +586,7 @@ body.dark .theme-box {
   background: #1f2933;
   color: #f5f5f5;
 }
+
 
 
 
