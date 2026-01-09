@@ -290,10 +290,33 @@ footer {
    =============================== */
 
 /* ===== DARK MODE ===== */
+/* DARK MODE FIX */
 body.dark {
-  background: #121212;
-  color: white;
+  background-color: #121212;
+  color: #f5f5f5;
 }
+
+body.dark p,
+body.dark li,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark td,
+body.dark th,
+body.dark a {
+  color: #f5f5f5;
+}
+
+/* Tables */
+body.dark table {
+  border-color: #444;
+}
+
+body.dark .sgpa-row td {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
 
 body.dark .nav-buttons a {
   background: #374151;
@@ -501,19 +524,29 @@ html {
   line-height: 1.6;
 }
 
+/* SOCIAL LINKS */
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
   margin-bottom: 30px;
 }
 
 .social-links a,
 .social-links span {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(108, 99, 255, 0.1);
   text-decoration: none;
-  color: inherit;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  transition: 0.3s;
 }
+
+.social-links a:hover {
+  background: linear-gradient(135deg, #6c63ff, #9f5cff);
+  color: #fff;
+}
+
 
 .btn {
   display: inline-block;
@@ -543,6 +576,7 @@ html {
     justify-content: center;
   }
 }
+
 
 
 
