@@ -466,18 +466,23 @@ html {
 }
 
 /* HERO SECTION */
+/* Fix for welcome/hero content visibility */
 .hero {
-  min-height: 100vh;
-  display: flex;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px 10%;
-  gap: 40px;
+  text-align: center; /* Ensure centered content */
+  min-height: 80vh; /* Make sure it’s tall enough */
+  padding: 40px 20px;
 }
 
-.hero-text {
-  max-width: 600px;
+.hero-text,
+.hero-img {
+  opacity: 1 !important; /* Prevent accidental hiding */
+  transform: none !important;
 }
+
 
 .hero-text .intro {
   letter-spacing: 2px;
@@ -605,6 +610,11 @@ body.dark .project a {
 .nav-links a.active {
   color: #0077cc;
   font-weight: bold;
+}
+
+body.dark .hero-text h1,
+body.dark .hero-text p {
+  color: #fff !important; /* Make text visible in dark */
 }
 
 
