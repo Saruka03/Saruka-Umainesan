@@ -1,32 +1,36 @@
-const reveals = document.querySelectorAll(".reveal");
-
-window.addEventListener("scroll", () => {
-  reveals.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-    const height = window.innerHeight;
-
-    if (top < height * 0.75) {
-      section.classList.add("active");
-      section.classList.remove("fade-out");
-    } else {
-      section.classList.remove("active");
-      section.classList.add("fade-out");
-    }
-  });
-});
-
-/* Dark / Light Mode */
 function toggleTheme() {
-  document.body.classList.toggle("dark");
+  const body = document.body;
+  const icon = document.querySelector(".theme-box .icon");
+  const text = document.querySelector(".theme-box .text");
 
-  const icon = document.querySelector(".icon");
-  const text = document.querySelector(".text");
+  body.classList.toggle("dark");
 
-  if (document.body.classList.contains("dark")) {
+  if (body.classList.contains("dark")) {
     icon.textContent = "☀️";
     text.textContent = "Light";
+    localStorage.setItem("theme", "dark");
   } else {
     icon.textContent = "🌙";
     text.textContent = "Dark";
+    localStorage.setItem("theme", "light");
   }
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  const icon = document.querySelector(".theme-box .icon");
+  const text = document.querySelector(".theme-box .text");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+    if (icon && text) {
+      icon.textContent = "☀️";
+      text.textContent = "Light";
+    }
+  } else {
+    if (icon && text) {
+      icon.textContent = "🌙";
+      text.textContent = "Dark";
+    }
+  }
+});
