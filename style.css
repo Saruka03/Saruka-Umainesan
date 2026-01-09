@@ -200,12 +200,13 @@ th {
    PROJECT CARDS
    =============================== */
 
+/* Project cards - light mode */
 .project {
-  background: #f9fafb;
-  padding: 20px;
-  margin-bottom: 30px;
+  background: #ffffff;
+  color: #000000;
+  padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
 }
 
 .project-links a {
@@ -349,6 +350,11 @@ body.dark header {
     ),
     url("images/dark_bg.jpg") center/cover no-repeat;
 }
+body.dark .project {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
 
 /* ===============================
    SCROLL ANIMATIONS
@@ -585,6 +591,20 @@ body.dark .project ul {
 body.dark .theme-box {
   background: #1f2933;
   color: #f5f5f5;
+}
+
+/* Links inside projects */
+.project a {
+  color: #0077cc;
+}
+
+body.dark .project a {
+  color: #4da3ff;
+}
+
+.nav-links a.active {
+  color: #0077cc;
+  font-weight: bold;
 }
 
 
