@@ -11,6 +11,12 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Always show reveal sections on welcome page */
+body.index-page .reveal {
+  opacity: 1;
+  transform: none;
+}
+
 /* ===============================
    NAVIGATION
    =============================== */
@@ -616,6 +622,7 @@ body.dark .hero-text h1,
 body.dark .hero-text p {
   color: #fff !important; /* Make text visible in dark */
 }
+
 
 
 
