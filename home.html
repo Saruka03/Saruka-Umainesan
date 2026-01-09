@@ -170,29 +170,9 @@
   <p>© 2026 Saruka Umainesan</p>
 </footer>
 
+<script src="script.js"></script> 
+
 <script>
-  const toggleBtn = document.getElementById("theme-toggle");
-  const body = document.body;
-
-  if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark");
-    toggleBtn.textContent = "☀️";
-  }
-
-  toggleBtn.addEventListener("click", () => {
-    body.classList.toggle("dark");
-
-    if (body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-      toggleBtn.textContent = "☀️";
-    } else {
-      localStorage.setItem("theme", "light");
-      toggleBtn.textContent = "🌙";
-    }
-  });
-</script>
-
- <script>
   /* Scroll reveal animation */
   const reveals = document.querySelectorAll(".reveal");
 
@@ -210,9 +190,9 @@
   reveals.forEach(el => observer.observe(el));
 </script>
  
-<script src="script.js"></script> 
 </body>
 </html>
+
 
 
 
