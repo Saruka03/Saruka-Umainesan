@@ -1,205 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saruka Umainesan | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <ul class="nav-links">
-      <li><a href="home.html" class="active">Home</a></li>
-      <li><a href="results.html">Results</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="certificates.html">Certificates</a></li>
-    </ul>
+<nav class="main-nav">
+  <div class="logo">Saruka</div>
 
-    <div class="theme-box" onclick="toggleTheme()">
-      <span class="icon">🌙</span>
-      <span class="text">Dark</span>
-    </div>
-  </nav>
+  <ul class="nav-links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="results.html">Results</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="certificates.html">Certificates</a></li>
+  </ul>
 
-  <!-- Header -->
-  <header>
-    <h1 class="hero-title">Saruka Umainesan</h1>
-    <p class="hero-subtitle">Electronic and Telecommunication Engineering Undergraduate <br> University of Moratuwa</p>
-    <div class="links hero-subtitle">
-      <a href="mailto:umainesansaruka@gmail.com">Email</a>
-      <a href="https://github.com/Saruka03" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/saruka-umainesan-a55490345/" target="_blank">LinkedIn</a>
-    </div>
-  </header>
+  <div class="theme-box" onclick="toggleTheme()">
+    <span class="icon">🌙</span>
+    <span class="text">Dark</span>
+  </div>
+</nav>
 
-  <!-- About -->
-  <section class="reveal">
-    <h2 class="hero-title">About Me</h2>
-    <p class="hero-subtitle">
-      I am an Electronic and Telecommunication Engineering undergraduate at the University of Moratuwa
-      with strong interests in analog circuit design, IoT systems, and cybersecurity.
-      I enjoy building practical engineering solutions that combine hardware and software.
+<!-- HERO -->
+<section class="hero-modern">
+  <!-- LEFT -->
+  <div class="hero-left">
+    <h4>Hello I'm</h4>
+    <h1>Saruka <span>Umainesan</span></h1>
+    <h3>Electronic & Telecommunication Engineering Undergraduate at University of Moratuwa</h3>
+
+    <p>
+      I am an undergraduate at the University of Moratuwa with a strong passion for
+      electronics, embedded systems, and communication technologies. I enjoy designing
+      practical engineering solutions that combine hardware and software, with interests
+      in analog circuit design, IoT systems, robotics, and cybersecurity.
     </p>
-  </section>
 
-  <!-- Education -->
-  <section class="reveal reveal-left">
-    <h2 class="hero-title">Education</h2>
-    <ul>
-      <li class="reveal delay-1">
-        <strong>BSc.Eng (Hons.) in Electronic and Telecommunication Engineering</strong><br>
-        University of Moratuwa, Sri Lanka (2024 - 2028)<br>
-        <span class="label">SGPA</span><span class="value">3.96 / 4.0</span>
-      </li>
+    <div class="hero-socials">
+      <a href="mailto:umainesansaruka@gmail.com">📧</a>
+      <a href="https://www.linkedin.com/in/saruka-umainesan-a55490345/" target="_blank">in</a>
+      <a href="https://github.com/Saruka03" target="_blank">🐙</a>
+      <a href="https://wa.me/94774287823" target="_blank">📱</a>
+    </div>
+  </div>
 
-      <br><li class="reveal delay-2">
-        <strong>G.C.E Advanced Level (Physical Science Stream)</strong><br>
-        3 A Passes<br>
-        V/Rambaikulam Girls' Maha Vidyalayam, Vavuniya, Sri Lanka (2022 / 2023)<br>
-        <span class="label">Z-score</span><span class="value">2.5025</span><br>
-      </li>
-
-      <br><li class="reveal delay-3">
-        <strong>G.C.E Ordinary Level</strong><br>
-        8 A Passes and 1 B Pass<br>
-        V/Rambaikulam Girls' Maha Vidyalayam, Vavuniya, Sri Lanka (2019)
-      </li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section class="reveal reveal-right">
-    <h2 class="hero-title">Projects</h2>
-    <ul>
-      <li class="reveal delay-1">
-        <strong>Automated Switch For Clothing Iron</strong><br>
-      </li>
-
-      <li class="reveal delay-2">
-        <strong>Analog Heartbeat Sensor</strong><br>
-      </li>
-
-      <li class="reveal delay-3">
-        <strong>Two-Way Digital Paging System Using Software Defined Radios</strong><br>
-      </li>
-
-      <li class="reveal delay-4">
-        <strong>Motherboard and Processor Dissection</strong><br>
-      </li>
-
-      <li class="reveal delay-5">
-        <strong>Sri Lankan Robotic Challenges - 2025</strong><br>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Skills -->
-<section class="reveal reveal-zoom">
-  <h2 class="hero-title">Skills</h2>
-  <ul class="skills">
-    <li class="reveal delay-1">Python</li>
-    <li class="reveal delay-1">C / C++</li>
-    <li class="reveal delay-2">Machine Learning (Fundamentals - Pandas)</li>
-    <li class="reveal delay-2">Web Development (HTML, CSS)</li>
-    <li class="reveal delay-3">Analog Circuit Design</li>
-    <li class="reveal delay-3">PCB Design (Altium)</li>
-    <li class="reveal delay-4">Embedded Systems</li>
-    <li class="reveal delay-4">IoT Systems</li>
-    <li class="reveal delay-5">Wireless Communication Systems</li>
-    <li class="reveal delay-5">Cybersecurity Fundamentals</li>
-  </ul>
+  <!-- RIGHT -->
+  <div class="hero-right">
+    <img src="saruka.png" alt="Saruka Umainesan">
+  </div>
 </section>
 
-
-  <!-- Experience -->
-<section class="reveal reveal-zoom">
-  <h2 class="hero-title">Experience & Interests</h2>
-
-  <ul>
-    <li class="reveal delay-1">
-      <strong>Leadership Experiences</strong>
-      <ul>
-        <li class="reveal delay-2">Department Representative - Semesters 4, 5, and 6</li>
-        <li class="reveal delay-3">Treasurer, All University Students Development Association - Vavuniya</li>
-        <li class="reveal delay-4">Senior Prefect, V/Rambaikulam Girls' Maha Vidyalayam</li>
-        <li class="reveal delay-5">Sports Captain, V/Rambaikulam Girls' Maha Vidyalayam</li>
-        <li class="reveal delay-5">President, Hindu Society - V/Rambaikulam Girls' Maha Vidyalayam</li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li class="reveal delay-1">
-      <strong>Volunteering Experiences</strong>
-      <ul>
-        <li class="reveal delay-2">Graphic Designer in Electronic Club, University of Moratuwa</li>
-        <li class="reveal delay-2">Graphic Designer for IUMC conducted by Mathematics Society, University of Moratuwa</li>
-        <li class="reveal delay-3">Member of Tamil Literary Association, University of Moratuwa</li>
-        <li class="reveal delay-3">Member of Rotaract Club, University of Moratuwa</li>
-        <li class="reveal delay-4">Aisec Global Volunteer (Vietnam)</li>
-        <li class="reveal delay-5">Volunteer Teaching Experiences in rural areas (Vavuniya, Sri Lanka)</li>
-        <li class="reveal delay-5">Debate Team Guider</li>
-        <li class="reveal delay-5">Announcer</li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li class="reveal delay-1">
-      <strong>Interests</strong>
-      <ul>
-        <li class="reveal delay-2">Mobile Networks</li>
-        <li class="reveal delay-2">Digital IC Making</li>
-        <li class="reveal delay-3">Deep Learning and Computer Vision</li>
-        <li class="reveal delay-4">Games - Chess, Volleyball</li>
-        <li class="reveal delay-5">Novels</li>
-        <li class="reveal delay-5">Traveling</li>
-      </ul>
-    </li>
-  </ul>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>© 2026 Saruka Umainesan</p>
-</footer>
-
-<script src="script.js"></script> 
-
-<script>
-  /* Scroll reveal animation */
-  const reveals = document.querySelectorAll(".reveal");
-
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
-
-  reveals.forEach(el => observer.observe(el));
-</script>
- 
+<script src="script.js"></script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
