@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome | Saruka Umainesan</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<body>
 
-<body class="index-page">
-<!-- 🔹 NAVBAR -->
-<nav>
+<nav class="main-nav">
+  <div class="logo">Saruka</div>
+
   <ul class="nav-links">
     <li><a href="home.html">Home</a></li>
     <li><a href="results.html">Results</a></li>
@@ -18,49 +11,39 @@
   </ul>
 
   <div class="theme-box" onclick="toggleTheme()">
-      <span class="icon">🌙</span>
-      <span class="text">Dark</span>
+    <span class="icon">🌙</span>
+    <span class="text">Dark</span>
   </div>
 </nav>
 
-<!-- 🔹 HERO / WELCOME SECTION -->
-<section class="section reveal active">
-  <div class="hero-text">
-    <p class="intro">Hey there 👋</p>
-    <h1>I’m <span>Saruka Umainesan</span></h1>
+<!-- HERO -->
+<section class="hero-modern">
+  <!-- LEFT -->
+  <div class="hero-left">
+    <h4>Hello I'm</h4>
+    <h1>Saruka <span>Umainesan</span></h1>
     <h3>Electronic & Telecommunication Engineering Undergraduate</h3>
 
-    <p class="desc">
-      I am an Electronic and Telecommunication Engineering undergraduate at the University of Moratuwa with a
-      strong interest in analog circuit design, embedded systems, and communication technologies. I enjoy
-      transforming theoretical concepts into practical engineering solutions through hands-on projects.
-      My academic journey has strengthened my problem-solving, analytical thinking, and teamwork skills,
-      while motivating me to explore innovative and impactful technological applications.
+    <p>
+      I am an undergraduate at the University of Moratuwa with a strong passion for
+      electronics, embedded systems, and communication technologies. I enjoy designing
+      practical engineering solutions that combine hardware and software, with interests
+      in analog circuit design, IoT systems, robotics, and cybersecurity.
     </p>
-      <!-- 🔗 CONTACT LINKS -->
-    <div class="social-links">
-      <a href="mailto:umainesansaruka@gmail.com">📧 Email</a>
-      <a href="https://www.linkedin.com/in/saruka-umainesan-a55490345/" target="_blank">🔗 LinkedIn</a>
-      <a href="https://github.com/Saruka03" target="_blank">💻 GitHub</a>
-      <a href="https://wa.me/94774287823" target="_blank">📱 WhatsApp</a>
-      <span>📍 25, Kanthapuram Road, Koomankulam, Vavuniya, Sri Lanka</span>
+
+    <div class="hero-socials">
+      <a href="mailto:umainesansaruka@gmail.com">📧</a>
+      <a href="https://www.linkedin.com/in/saruka-umainesan-a55490345/" target="_blank">in</a>
+      <a href="https://github.com/Saruka03" target="_blank">🐙</a>
+      <a href="https://wa.me/94774287823" target="_blank">📱</a>
     </div>
-    <a href="home.html" class="btn">Enter Portfolio</a>
   </div>
 
-  <!-- 🔹 IMAGE -->
-  <div class="hero-img">
-    <img src="images/saruka.png" alt="Saruka Umainesan">
+  <!-- RIGHT -->
+  <div class="hero-right">
+    <img src="saruka.png" alt="Saruka Umainesan">
   </div>
 </section>
 
 <script src="script.js"></script>
-
-<script>
-  document.querySelectorAll(".reveal").forEach(el => {
-    el.classList.add("active");
-  });
-</script>
-  
 </body>
-</html>
